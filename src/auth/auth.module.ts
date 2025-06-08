@@ -18,5 +18,6 @@ import { RefreshToken, RefreshTokenSchema } from './schemas/refresh-token.schema
   ])],
   controllers: [AuthController],
   providers: [AuthService],
+  exports: [AuthService]
 })
 export class AuthModule { }

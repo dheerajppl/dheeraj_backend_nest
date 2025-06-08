@@ -67,6 +67,10 @@ export class AuthService {
     }
   }
 
+  async getUserById(userId: string) {
+    return await this.UserModel.findById(userId).exec();
+  }
+
   async generateUserTokens(payload) {
 
     const accessToken = this.JwtService.sign(payload);

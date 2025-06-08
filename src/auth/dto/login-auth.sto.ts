@@ -8,6 +8,8 @@ export class loginData{
     @MinLength(6)
     @Matches(/^(?=.*[0-9])/,{message: 'Password must contain at least one munber'})
     password: string;
+    
+    fcmToken?: string
 
 }
 

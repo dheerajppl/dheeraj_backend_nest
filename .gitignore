@@ -395,6 +395,7 @@ Temporary Items
 =======
 # Local
 .env
+firebase_sdk.json
 dist
 .webpack
 .serverless/**/*.zip

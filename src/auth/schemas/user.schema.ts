@@ -11,6 +11,9 @@ export class User extends Document {
 
     @Prop({required: true})
     password: string;
+
+    @Prop()
+    fcmToken?: string
 }
 
   export const UserSchema = SchemaFactory.createForClass(User);
